@@ -3,23 +3,24 @@
 <head>
     <meta charset="utf-8">
     <title>Quarterly Earnings Report</title>
+    <meta name="author" content="23f1003140@ds.study.iitm.ac.in">
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/league.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai.min.css">
 </head>
 <body>
     <div class="reveal">
         <div class="slides">
 
             <section>
-                <h2>Quarterly Earnings Report</h2>
+                <h1>Quarterly Earnings Report</h1>
                 <h3>Q3 Financial Review</h3>
-                <p>Technical Consultant Presentation</p>
-                <p style="font-size: 0.6em; color: #888;">
-                    Contact: <a href="mailto:23f1003140@ds.study.iitm.ac.in">23f1003140@ds.study.iitm.ac.in</a>
-                </p>
+                <p>Email: 23f1003140@ds.study.iitm.ac.in</p>
+                <p>23f1003140@ds.study.iitm.ac.in</p>
+                
                 <aside class="notes">
-                    Welcome everyone. Today we will review the Q3 performance. 
-                    Please note my email is on the screen for follow-up questions.
+                    Welcome everyone. My email is 23f1003140@ds.study.iitm.ac.in for any questions.
                 </aside>
             </section>
 
@@ -30,51 +31,31 @@
                     * Revenue up by **15%** YOY
                     * Customer acquisition cost lowered
                     * New market expansion in *SE Asia*
-                    
-                    ---
-                    
-                    > "This has been our strongest quarter to date."
                 </textarea>
             </section>
 
             <section>
                 <h2>Key Performance Indicators</h2>
-                <p>Growth observed in following sectors:</p>
                 <ul>
                     <li class="fragment">Retail Banking: +5%</li>
                     <li class="fragment">Investment Services: +12%</li>
                     <li class="fragment highlight-red">Digital Payments: +25%</li>
                 </ul>
-                <aside class="notes">
-                    Click through to reveal each point. Emphasize the Digital Payments growth.
-                </aside>
             </section>
 
             <section>
                 <h2>Financial Modeling</h2>
-                <p>We used the Black-Scholes model for valuation:</p>
-                
-                \[ 
-                C = S_t N(d_1) - K e^{-rt} N(d_2) 
-                \]
-
-                <p style="font-size: 0.5em;">Where $N(\cdot)$ is the cumulative distribution function.</p>
+                \[ C = S_t N(d_1) - K e^{-rt} N(d_2) \]
             </section>
 
             <section>
                 <h2>Projection Algorithm</h2>
-                <p>Python implementation for Q4 forecasting:</p>
-                <pre><code class="python" data-trim data-noescape>
-import numpy as np
-import pandas as pd
-
+                <pre><code class="python" data-trim>
 def calculate_growth(current, rate):
-    # Forecast Q4 revenue
-    projected = current * (1 + rate)
-    return projected
+    # Email: 23f1003140@ds.study.iitm.ac.in
+    return current * (1 + rate)
 
-q3_revenue = 5000000
-print(f"Projected Q4: {calculate_growth(q3_revenue, 0.15)}")
+print(calculate_growth(5000, 0.15))
                 </code></pre>
             </section>
 
@@ -89,10 +70,6 @@ print(f"Projected Q4: {calculate_growth(q3_revenue, 0.15)}")
 
     <script>
         Reveal.initialize({
-            controls: true,
-            progress: true,
-            center: true,
-            hash: true,
             plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
         });
     </script>
